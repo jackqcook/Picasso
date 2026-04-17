@@ -2,13 +2,16 @@
 
 This repository documents a project that learns a generative model of paintings and explores its latent space to produce synthetic imagery and video.
 
-## What we did (high level)
 
-We fine-tuned **StyleGAN2-ADA** (the [NVlabs StyleGAN2-ADA PyTorch](https://github.com/NVlabs/stylegan2-ada-pytorch) implementation) on a curated set of artwork images. StyleGAN2-ADA is well suited to smaller or domain-specific image collections because its adaptive discriminator augmentation reduces overfitting while training.
+I fine-tuned **StyleGAN2-ADA** (the [NVlabs StyleGAN2-ADA PyTorch](https://github.com/NVlabs/stylegan2-ada-pytorch) implementation) on a curated set of artwork images. StyleGAN2-ADA is well suited to smaller or domain-specific image collections because its adaptive discriminator augmentation reduces overfitting while training.
 
 After training, we analyzed **W-space** (the intermediate latent space of the generator), embedded latent codes with **UMAP**, grouped them with **KMeans**, and constructed smooth **latent walks** that move through the learned manifold—particularly paths that respect the discovered clusters. Those walks drive frame-by-frame generation, which we assembled into a video and lightly post-processed for temporal continuity.
 
 The full runnable workflow lives in **`AI_art.ipynb`**.
+
+## Sample output
+
+The final latent walk is included in the repository as **[`supervised_output-2.mp4`](./supervised_output-2.mp4)**. On GitHub, use that link (or open the file from the repo root) to stream or download the video. GitHub’s README renderer does not reliably inline-play `.mp4` files the way notebooks do, so the file is linked here rather than embedded as HTML.
 
 ## Where we ran it
 
@@ -25,6 +28,7 @@ If you reuse this project, place your ArtWiki-derived image folder where the not
 | Item | Purpose |
 |------|---------|
 | `AI_art.ipynb` | End-to-end Colab-oriented notebook: environment setup, StyleGAN repo clone and small compatibility patches, dataset packaging, training, latent analysis, and video export. |
+| `supervised_output-2.mp4` | Example output video (latent walk) produced by the notebook pipeline. |
 
 ## Acknowledgments
 
