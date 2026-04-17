@@ -13,7 +13,17 @@ The full runnable workflow lives in **`AI_art.ipynb`**.
 
 ## Sample output
 
-The final latent walk is included in the repository as **[`supervised_output-2.mp4`](./supervised_output-2.mp4)** (full export). A smaller **[`supervised_output-2_readme.mp4`](./supervised_output-2_readme.mp4)** copy is also included so it stays under GitHub’s **10 MB** limit for README/issue video uploads—drag that file into the README editor on **github.com** if you want an inline player on the repo home page. GitHub does not inline-play normal repo-relative `.mp4` links; the attachment upload uses the `user-attachments` URL GitHub inserts after a successful drop.
+GitHub renders **GIFs** inline in READMEs; **`.mp4` links** only show as downloads. Below is a short preview (~16s of the walk at reduced resolution and frame rate); full quality with sound is in the linked videos.
+
+![Latent walk preview (GIF)](./supervised_output-2_preview.gif)
+
+| File | Notes |
+|------|--------|
+| **[`supervised_output-2.mp4`](./supervised_output-2.mp4)** | Full export (~25 MB). |
+| **[`supervised_output-2_readme.mp4`](./supervised_output-2_readme.mp4)** | H.264 re-encode under 10 MB (for GitHub attachment URL / local playback). |
+| **`supervised_output-2_preview.gif`** | README preview only; generated with `ffmpeg` from the readme-sized MP4. |
+
+For an **inline HTML5 player** on the repo home page (not just a GIF), upload **`supervised_output-2_readme.mp4`** via drag-and-drop in the README editor on **github.com** so GitHub inserts a `user-attachments` URL.
 
 ## Where we ran it
 
@@ -30,7 +40,9 @@ If you reuse this project, place your ArtWiki-derived image folder where the not
 | Item | Purpose |
 |------|---------|
 | `AI_art.ipynb` | End-to-end Colab-oriented notebook: environment setup, StyleGAN repo clone and small compatibility patches, dataset packaging, training, latent analysis, and video export. |
-| `supervised_output-2.mp4` | Example output video (latent walk) produced by the notebook pipeline. |
+| `supervised_output-2.mp4` | Full-resolution example output video (latent walk). |
+| `supervised_output-2_readme.mp4` | Smaller H.264 export for sharing and GitHub upload limits. |
+| `supervised_output-2_preview.gif` | Short animated preview for the README (GitHub shows GIFs inline). |
 
 ## Acknowledgments
 
