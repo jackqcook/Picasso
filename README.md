@@ -1,3 +1,5 @@
+
+
 # Picasso — AI art with StyleGAN2-ADA
 
 This repository documents a project that learns a generative model of paintings and explores its latent space to produce synthetic imagery and video.
