@@ -2,7 +2,7 @@
 
 # Picasso — AI art with StyleGAN2-ADA
 
-This repository documents a project that learns a generative model of paintings and explores its latent space to produce synthetic imagery and video.
+
 
 
 I fine-tuned **StyleGAN2-ADA** (the [NVlabs StyleGAN2-ADA PyTorch](https://github.com/NVlabs/stylegan2-ada-pytorch) implementation) on a curated set of artwork images. StyleGAN2-ADA is well suited to smaller or domain-specific image collections because its adaptive discriminator augmentation reduces overfitting while training.
@@ -13,7 +13,7 @@ The full runnable workflow lives in **`AI_art.ipynb`**.
 
 ## Sample output
 
-The final latent walk is included in the repository as **[`supervised_output-2.mp4`](./supervised_output-2.mp4)**. On GitHub, use that link (or open the file from the repo root) to stream or download the video. GitHub’s README renderer does not reliably inline-play `.mp4` files the way notebooks do, so the file is linked here rather than embedded as HTML.
+The final latent walk is included in the repository as **[`supervised_output-2.mp4`](./supervised_output-2.mp4)** (full export). A smaller **[`supervised_output-2_readme.mp4`](./supervised_output-2_readme.mp4)** copy is also included so it stays under GitHub’s **10 MB** limit for README/issue video uploads—drag that file into the README editor on **github.com** if you want an inline player on the repo home page. GitHub does not inline-play normal repo-relative `.mp4` links; the attachment upload uses the `user-attachments` URL GitHub inserts after a successful drop.
 
 ## Where we ran it
 
