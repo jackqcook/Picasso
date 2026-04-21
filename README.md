@@ -44,6 +44,28 @@ If you reuse this project, place your ArtWiki-derived image folder where the not
 | `supervised_output-2_readme.mp4` | Smaller H.264 export for sharing and GitHub upload limits. |
 | `supervised_output-2_preview.gif` | Short animated preview for the README (GitHub shows GIFs inline). |
 
+## Website storefront
+
+A simple one-page storefront is included:
+
+- `index.html`
+- `styles.css`
+- `script.js`
+- `clips/clip-01.mp4`, `clips/clip-02.mp4`, `clips/clip-03.mp4`
+
+Open `index.html` in your browser to view the site.
+
+### Re-generate clip sections
+
+If you want different moments from the film:
+
+1. Edit clip timestamps in `make_clips.sh`
+2. Run:
+
+```bash
+./make_clips.sh
+```
+
 ## Acknowledgments
 
 - [StyleGAN2-ADA (PyTorch)](https://github.com/NVlabs/stylegan2-ada-pytorch) — NVIDIA Research  
