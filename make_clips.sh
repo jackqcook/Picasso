@@ -22,5 +22,6 @@ fi
 ffmpeg -y -ss 00:00:05 -i "${SOURCE_FILE}" -t 00:00:35 -c:v libx264 -crf 19 -preset slow -an "${CLIPS_DIR}/clip-01.mp4"
 ffmpeg -y -ss 00:01:00 -i "${SOURCE_FILE}" -t 00:00:35 -c:v libx264 -crf 19 -preset slow -an "${CLIPS_DIR}/clip-02.mp4"
 ffmpeg -y -ss 00:01:55 -i "${SOURCE_FILE}" -t 00:00:35 -c:v libx264 -crf 19 -preset slow -an "${CLIPS_DIR}/clip-03.mp4"
+ffmpeg -y -ss 00:02:50 -i "${SOURCE_FILE}" -t 00:00:35 -c:v libx264 -crf 19 -preset slow -an "${CLIPS_DIR}/clip-04.mp4"
 
 echo "Done. New clips written to ${CLIPS_DIR}/"
