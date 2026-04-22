@@ -313,14 +313,13 @@ footer a {
 }
 
 .about-main {
-  width: min(1160px, 92vw);
+  width: min(1320px, 97vw);
   margin: 2.2rem auto 4rem;
 }
 
 .about-layout {
   display: grid;
   grid-template-columns: 1fr;
-  border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
 }
 
@@ -331,24 +330,27 @@ footer a {
 
 .about-image {
   display: block;
-  width: min(100%, 720px);
+  width: 100%;
+  max-width: none;
   height: auto;
   margin: 0 auto;
 }
 
 .about-content {
   padding: 1.8rem 1.3rem;
+  font-size: 0.92rem;
+  line-height: 1.4;
 }
 
 .about-content h1 {
   margin: 0 0 1rem;
-  font-size: 1.35rem;
+  font-size: 1.2rem;
   font-weight: 600;
 }
 
 .about-content h2 {
   margin: 1.4rem 0 0.7rem;
-  font-size: 1rem;
+  font-size: 0.9rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
@@ -356,6 +358,7 @@ footer a {
 .about-content p {
   margin: 0 0 0.95rem;
   color: var(--text);
+  font-size: 0.80rem;
 }
 
 .about-content ul {
@@ -402,16 +405,16 @@ footer a {
   }
 
   .about-layout {
-    grid-template-columns: minmax(0, 1fr) minmax(320px, 42%);
+    grid-template-columns: minmax(0, 1fr) minmax(300px, 36%);
   }
 
   .about-image-wrap {
     border-bottom: none;
     border-right: 1px solid var(--line);
-    padding: 3.2rem;
+    padding: 1.6rem 1.4rem 1.6rem 0;
   }
 
   .about-content {
-    padding: 3rem 2.2rem;
+    padding: 2.7rem 2.2rem;
   }
 }
